@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osuský architekti</title>
+  <style>
+    header {
+      display: flex; /* Make header a flexbox container */
+      align-items: center; /* Align items vertically */
+      justify-content: space-between; /* Space items horizontally */
+    }
+    
+    nav {
+      display: flex; /* Make navigation a flexbox container */
+      list-style: none; /* Remove default bullet points */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+    }
+    
+    nav li {
+      margin-left: 20px; /* Add margin between navigation items */
+    }
+    
+    /* Video Styles */
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 40%; /* Adjusted padding for smaller video size */
+      margin-bottom: 30px;
+    }
+    
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    /* Main Content Scrolling */
+    main {
+      overflow-y: scroll; /* Enable vertical scrolling for main content */
+      padding: 20px; /* Add some padding for content area */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Osuský architekti</h1>
+    <nav>
+      <li><a href="#">Domov</a></li>
+      <li><a href="#">O nás</a></li>
+      <li><a href="#">Projekty</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </nav>
+  </header>
+
+  <main>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wFijCHeNW6w?autoplay=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+<footer>
+  <p>&copy; 2024 Osuský architekti, s.r.o. Všetky práva vyhradené.</p>
+</footer>
+</body>
+</html>

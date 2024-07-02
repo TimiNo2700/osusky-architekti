@@ -60,25 +60,6 @@
             width: 100%;
             height: auto;
         }
-        /* Slider Styles */
-        .slider {
-            position: relative;
-            width: 100%;
-            max-width: 1000px; /* Adjust as needed */
-            margin: 20px auto;
-            overflow: hidden;
-        }
-        .slide {
-            display: none;
-        }
-        .active {
-            display: block;
-        }
-        .slide img,
-        .slide video {
-            width: 100%;
-            height: auto;
-        }
     </style>
 </head>
 <body>
@@ -103,42 +84,8 @@
         </video>
     </div>
 
-    <!-- Slider Section -->
-    <div class="slider" id="slider">
-        <div class="slide active">
-            <img src="https://github.com/TimiNo2700/osusky-architekti/raw/main/EmbeddedImage.jpg" alt="Image 1">
-        </div>
-        <div class="slide">
-            <img src="https://github.com/TimiNo2700/osusky-architekti/raw/main/EmbeddedImage2.jpg" alt="Image 2">
-        </div>
-        <div class="slide">
-            <img src="https://github.com/TimiNo2700/osusky-architekti/raw/main/EmbeddedImage3.jpg" alt="Image 3">
-        </div>
-        <div class="slide">
-            <img src="https://github.com/TimiNo2700/osusky-architekti/raw/main/EmbeddedImage4.jpg" alt="Image 4">
-        </div>
-        <div class="slide">
-            <img src="https://github.com/TimiNo2700/osusky-architekti/raw/main/EmbeddedImage5.jpg" alt="Image 5">
-        </div>
-    </div>
-
     <footer>
         <p>2024 &copy; Osuský Architekti, s.r.o. All rights reserved.</p>
     </footer>
-
-    <script>
-        // JavaScript for Slider
-        const slides = document.querySelectorAll('.slide');
-        let currentSlide = 0;
-        const slideInterval = 5000; // Change slide every 5 seconds
-
-        function nextSlide() {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-
-        setInterval(nextSlide, slideInterval);
-    </script>
 </body>
 </html>

@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osuský Architekti</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
             line-height: 1.6;
         }
         header {
-            background: #f4f4f4;
+            background: transparent; /* Make header background transparent */
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: fixed; /* Position the header at the top of the page */
+            top: 0;
+            width: 100%;
+            z-index: 10; /* Ensure the header stays above the video */
         }
         .logo-title {
             display: flex;

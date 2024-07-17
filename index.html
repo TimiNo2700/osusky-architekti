@@ -15,7 +15,9 @@
             line-height: 1.6;
         }
         header {
-            background: transparent; /* Make header background transparent */
+            background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            backdrop-filter: blur(10px); /* Apply blur effect */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow for a glossy effect */
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
@@ -124,6 +126,11 @@
             width: 100%;
             height: auto;
         }
+        #new-section {
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -155,8 +162,11 @@
         </video>
     </div>
 
+    <!-- New Section -->
+    <!-- Removed the section with id="new-section" -->
+
     <footer>
-        <p> &copy; 2024 Osuský Architekti, s.r.o. All rights reserved.</p>
+        <p>&copy; 2024 Osuský Architekti, s.r.o. All rights reserved.</p>
     </footer>
 
     <script>
@@ -171,3 +181,4 @@
     </script>
 </body>
 </html>
+
